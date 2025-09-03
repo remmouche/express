@@ -69,6 +69,7 @@ app
 			`User ID is: ${req.params.id} and Book ID is: ${req.params.bookId}`
 		);
 	});
+//http://localhost:3000/users/10/books/12
 //Start the server
 app.listen(port, () => {
 	console.log(`my app listening on port ${port}`);
@@ -81,3 +82,4 @@ app.listen(port, () => {
 // PATCH: Partially Update Data
 // DELETE: Delete Data
 // ALL: Any HTTP Request Method
+
