@@ -69,7 +69,13 @@ app
 			`User ID is: ${req.params.id} and Book ID is: ${req.params.bookId}`
 		);
 	});
-//http://localhost:3000/users/10/books/12
+
+	app.post('/users', (req, res) => {
+		const {name, email} = req.body;
+		res.send(`user name: ${name} user email: ${{email}} `)
+	})
+
+
 //Start the server
 app.listen(port, () => {
 	console.log(`my app listening on port ${port}`);
